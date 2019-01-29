@@ -31,31 +31,31 @@ for ($i=0; $i < 4 ; $i++) {
 echo"<hr>";
 
 //  3
-$pilotito = "";
+$ast = "";
 
 for ($t=0; $t < 6; $t++) { 
-    $pilotito.="*";
-    echo $pilotito;
+    $as.="*";
+    echo $as;
     echo"<br>";
 }
 echo"<hr>";
 
 // 4
-$pilotito2 = "*";
-$pilotito3 = "*";
-$pilotito4 = "**";
+$as2 = "*";
+$as3 = "*";
+$as4 = "**";
 
 for ($s=0; $s < 1; $s++) {
-    echo $pilotito2."<br>";
+    echo $as2."<br>";
     for ($q=0; $q < 2 ; $q++) { 
-        $pilotito3.=$pilotito4;
-        echo$pilotito3;
+        $as3.=$as4;
+        echo$piloto3;
         echo"<br>";
     }
     for ($f=0; $f < 1; $f++) { 
-        $pilotito4.=$pilotito2;
-        echo $pilotito4."<br>";
-        echo $pilotito2;
+        $as4.=$as2;
+        echo $as4."<br>";
+        echo $as2;
 
     }
 }
@@ -64,15 +64,15 @@ echo"<hr>";
 
 
 // 5
-$espacios = "&nbsp";
-$unpilotito = "*";
+$espacio = "&nbsp";
+$aste = "*";
 
 for ($z=0; $z < 9; $z = $z + 2) { 
     for ($c=0; $c < 9 - $z - 1; $c++) { 
-       echo $espacios;
+       echo $espacio;
     }
     for ($c=0; $c <= $z; $c++) { 
-        echo $unpilotito;
+        echo $aste;
     }
     echo"<br>";
 }
