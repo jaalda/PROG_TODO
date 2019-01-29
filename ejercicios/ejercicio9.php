@@ -8,40 +8,75 @@
 </head>
 <body>
         <?php
-    $punto = "*" ;
-    for ($i=0; $i<=4; $i++){
-    echo "<p>$punto</p>";
-    }
 
-    
+   // 1
+$x = 0;
 
-    for ($i=0; $i<=4; $i++){
-    echo "<p>$punto$punto$punto$punto$punto</p>"; 
+while($x < 4){
+    echo "*"."<br>";
+    $x++;
 }
 
+echo"<hr>";
 
-for ($i=0; $i<=5; $i++){
 
-    if ($i=0){
-        echo "<p>$punto</p>";
-    
-
-    else if ($i=1){
-        echo "<p>$punto$punto</p>";
+//  2
+for ($i=0; $i < 4 ; $i++) { 
+    for ($u=0; $u < 4; $u++) { 
+        echo "*";
     }
+    echo"<br>";
+}
 
-    else if ($i=2){
-        echo "<p>$punto$punto$punto</p>";
+echo"<hr>";
+
+//  3
+$pilotito = "";
+
+for ($t=0; $t < 6; $t++) { 
+    $pilotito.="*";
+    echo $pilotito;
+    echo"<br>";
+}
+echo"<hr>";
+
+// 4
+$pilotito2 = "*";
+$pilotito3 = "*";
+$pilotito4 = "**";
+
+for ($s=0; $s < 1; $s++) {
+    echo $pilotito2."<br>";
+    for ($q=0; $q < 2 ; $q++) { 
+        $pilotito3.=$pilotito4;
+        echo$pilotito3;
+        echo"<br>";
     }
+    for ($f=0; $f < 1; $f++) { 
+        $pilotito4.=$pilotito2;
+        echo $pilotito4."<br>";
+        echo $pilotito2;
 
-    else if ($i=3){
-        echo "<p>$punto$punto$punto$punto</p>";
-    }
-
-    else{
-        echo "<p>$punto$punto$punto$punto$punto</p>";
     }
 }
+
+echo"<hr>";
+
+
+// 5
+$espacios = "&nbsp";
+$unpilotito = "*";
+
+for ($z=0; $z < 9; $z = $z + 2) { 
+    for ($c=0; $c < 9 - $z - 1; $c++) { 
+       echo $espacios;
+    }
+    for ($c=0; $c <= $z; $c++) { 
+        echo $unpilotito;
+    }
+    echo"<br>";
+}
+
 
   
 
