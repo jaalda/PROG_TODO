@@ -1,13 +1,3 @@
-<?php
-$conexion = new mysqli("localhost", "root", "", "proy6");
-if ($conexion->connect_errno) {
-    echo "Fallo al conectar a MySQL: (" . $conexion->connect_errno . ") " . $conexion->connect_error;
-}else{
-  $resultado = $conexion->query("SELECT * FROM usuarios");
-}
-?>
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -99,17 +89,7 @@ if ($conexion->connect_errno) {
             </div><!--div segundaparte-->
 
             <div id="listado"><!--div php-->
-                <a href="inner.php">VOLVER A  ATRAS</a>
-
-                <?php
-foreach ($resultado as $usuarios){
-    echo "<p><strong>ID: </strong>".$usuarios['id']."<strong> Nombre: </strong>".$usuarios['nombre']."<strong> Apellidos: </strong>".$usuarios['apellidos']."</p>";
-    echo "<p><strong>Edad: </strong>".$usuarios['edad']."<strong> Curso: </strong>".$usuarios['curso']."</p>";
-    echo "<p><strong>PTS: </strong>".$usuarios['puntuacion']."</p>";
-
-}
-                ?>
-
+                <a href="listadoJugadores.php">TODOS LOS PLAYERS</a>
             </div>
 
 
